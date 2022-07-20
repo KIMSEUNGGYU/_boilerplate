@@ -1,9 +1,15 @@
+import styled from '@emotion/styled'
+
 function App() {
   return (
-    <div className="App">
+    <Wapper>
       <h1>Template</h1>
-    </div>
+    </Wapper>
   );
 }
+
+const Wapper = styled.div`
+  color: red;  
+`
 
 export default App;
