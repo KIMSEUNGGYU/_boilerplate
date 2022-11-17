@@ -1,5 +1,12 @@
 # boilerplate
 
+## 실행
+```sh
+git clone -b {branch_name} --single-branch {저장소 URL} {?folerName}
+
+git clone -b 01-react-ts --single-branch https://github.com/KIMSEUNGGYU/boilerplate.git 01-react-ts
+```
+
 ## 참고
 
 ### `template`
