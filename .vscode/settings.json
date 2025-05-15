@@ -2,5 +2,39 @@
   "editor.formatOnSave": true,
   "editor.tokenColorCustomizations": {
     "comments": "#d39e9e"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json5]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
+
+  // (참고) Prettier 확장 프로그램 (esbenp.prettier-vscode) 관련 설정:
+  // 위 설정으로 ESLint가 Prettier를 실행하므로, Prettier 확장 프로그램이
+  // 직접 포맷팅을 중복으로 시도하지 않도록 하는 것이 중요합니다.
+  // "prettier.eslintIntegration": false, // 일반적으로는 이 옵션이 더 이상 필요 없거나, true로 두어도 defaultFormatter 설정이 우선됩니다.
+  // 문제가 지속되면 false로 설정해보세요.
+  // "prettier.disableLanguages": [], // ESLint를 통해 포맷팅을 제어하므로, Prettier 확장 자체에서 언어를 비활성화할 필요는 보통 없습니다.
+
+  // 다른 설정들...
 }
